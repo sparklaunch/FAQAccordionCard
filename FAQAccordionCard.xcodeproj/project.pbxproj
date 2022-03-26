@@ -13,6 +13,7 @@
 		9008914727EF09D0009C364D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008913527EF09CF009C364D /* ContentView.swift */; };
 		9008914827EF09D0009C364D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9008913627EF09D0009C364D /* Assets.xcassets */; };
 		9008914927EF09D0009C364D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9008913627EF09D0009C364D /* Assets.xcassets */; };
+		9008915427EF0A8F009C364D /* KumbhSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9008915327EF0A8F009C364D /* KumbhSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		9008913B27EF09D0009C364D /* FAQAccordionCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAQAccordionCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9008914127EF09D0009C364D /* FAQAccordionCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAQAccordionCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9008914327EF09D0009C364D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9008915327EF0A8F009C364D /* KumbhSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KumbhSans.ttf; sourceTree = "<group>"; };
+		9008915527EF0AA4009C364D /* FAQAccordionCard--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FAQAccordionCard--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 		9008912E27EF09CF009C364D = {
 			isa = PBXGroup;
 			children = (
+				9008915527EF0AA4009C364D /* FAQAccordionCard--iOS--Info.plist */,
 				9008913327EF09CF009C364D /* Shared */,
 				9008914227EF09D0009C364D /* macOS */,
 				9008913C27EF09D0009C364D /* Products */,
@@ -54,6 +58,7 @@
 		9008913327EF09CF009C364D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9008915227EF0A86009C364D /* Fonts */,
 				9008913427EF09CF009C364D /* FAQAccordionCardApp.swift */,
 				9008913527EF09CF009C364D /* ContentView.swift */,
 				9008913627EF09D0009C364D /* Assets.xcassets */,
@@ -76,6 +81,14 @@
 				9008914327EF09D0009C364D /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		9008915227EF0A86009C364D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9008915327EF0A8F009C364D /* KumbhSans.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9008914827EF09D0009C364D /* Assets.xcassets in Resources */,
+				9008915427EF0A8F009C364D /* KumbhSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +330,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FAQAccordionCard--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -346,6 +361,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FAQAccordionCard--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
