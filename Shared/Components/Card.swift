@@ -16,6 +16,7 @@ struct Card: View {
                     .font(.custom("Kumbh Sans", size: 32))
                     .fontWeight(.bold)
                     .foregroundColor(Color("TitleColor"))
+                Accordion()
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 15))
