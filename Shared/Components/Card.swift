@@ -18,6 +18,7 @@ struct Card: View {
                     .foregroundColor(Color("TitleColor"))
                 Accordion()
             }
+            .padding(EdgeInsets(top: 100, leading: 30, bottom: 100, trailing: 30))
         }
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 30)

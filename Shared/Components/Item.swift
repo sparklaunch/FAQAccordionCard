@@ -10,9 +10,21 @@ import SwiftUI
 struct Item: View {
     let title: String
     let description: String?
+    let isLast: Bool
     var body: some View {
-        HStack {
-            Text(title)
+        VStack {
+            HStack {
+                Text(title)
+                    .font(.custom("Kumbh Sans", size: 14))
+                    .foregroundColor(Color("TitleColor"))
+                Spacer()
+                Image("DownArrow")
+                    .resizable()
+                    .frame(width: 10, height: 7)
+            }
         }
+        .padding(.vertical, 10)
+        !isLast ? Divider()
+            .foregroundColor(Color("DividerColor")) : nil
     }
 }

@@ -11,8 +11,8 @@ struct Accordion: View {
     let data: [Data] = DataManager.getData()
     var body: some View {
         VStack {
-            ForEach(data, id: \.self.title) { item in
-                Item(title: item.title, description: item.description)
+            ForEach(data, id: \.self.id) { item in
+                Item(title: item.title, description: item.description, isLast: item.id == DataManager.length - 1)
             }
         }
     }
