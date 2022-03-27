@@ -16,6 +16,7 @@
 		9008915427EF0A8F009C364D /* KumbhSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9008915327EF0A8F009C364D /* KumbhSans.ttf */; };
 		9008915827F00FEE009C364D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008915727F00FEE009C364D /* Background.swift */; };
 		9008915A27F01036009C364D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008915927F01036009C364D /* Card.swift */; };
+		9008915D27F01140009C364D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008915C27F01140009C364D /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9008915527EF0AA4009C364D /* FAQAccordionCard--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FAQAccordionCard--iOS--Info.plist"; sourceTree = "<group>"; };
 		9008915727F00FEE009C364D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		9008915927F01036009C364D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9008915C27F01140009C364D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		9008913327EF09CF009C364D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9008915B27F01131009C364D /* Utilities */,
 				9008915627F00FE4009C364D /* Components */,
 				9008915227EF0A86009C364D /* Fonts */,
 				9008913427EF09CF009C364D /* FAQAccordionCardApp.swift */,
@@ -103,6 +106,14 @@
 				9008915927F01036009C364D /* Card.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9008915B27F01131009C364D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9008915C27F01140009C364D /* Data.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9008914627EF09D0009C364D /* ContentView.swift in Sources */,
+				9008915D27F01140009C364D /* Data.swift in Sources */,
 				9008914427EF09D0009C364D /* FAQAccordionCardApp.swift in Sources */,
 				9008915827F00FEE009C364D /* Background.swift in Sources */,
 				9008915A27F01036009C364D /* Card.swift in Sources */,

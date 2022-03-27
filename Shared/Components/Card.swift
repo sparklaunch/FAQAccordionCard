@@ -11,10 +11,12 @@ struct Card: View {
     var body: some View {
         ZStack {
             Color.white
-            Text("FAQ")
-                .font(.custom("Kumbh Sans", size: 32))
-                .fontWeight(.bold)
-                .foregroundColor(Color("TitleColor"))
+            VStack {
+                Text("FAQ")
+                    .font(.custom("Kumbh Sans", size: 32))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("TitleColor"))
+            }
         }
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 30)
