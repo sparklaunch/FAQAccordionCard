@@ -10,19 +10,25 @@ import SwiftUI
 struct Card: View {
     var body: some View {
         ZStack {
-            Color.white
-            VStack {
-                Text("FAQ")
-                    .font(.custom("Kumbh Sans", size: 32))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("TitleColor"))
-                Accordion()
+            ZStack(alignment: .top) {
+                Color.white
+                VStack {
+                    Spacer()
+                        .frame(height: 120)
+                    Text("FAQ")
+                        .font(.custom("Kumbh Sans", size: 32))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("TitleColor"))
+                    Accordion()
+                }
+                .padding(.horizontal, 30)
             }
-            .padding(EdgeInsets(top: 100, leading: 30, bottom: 100, trailing: 30))
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            Illustration()
+                .offset(y: -330)
         }
-        .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 30)
-        .frame(height: 500)
+        .frame(height: 600)
         .shadow(radius: 5)
     }
 }

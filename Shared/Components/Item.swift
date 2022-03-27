@@ -22,7 +22,7 @@ struct Item: View {
                     .foregroundColor(Color("TitleColor"))
                     .fontWeight(isActive ? .bold : .regular)
                 Spacer()
-                Image("DownArrow")
+                Image(decorative: "DownArrow")
                     .resizable()
                     .frame(width: 10, height: 7)
                     .rotationEffect(.degrees(isActive ? 180 : 0))
