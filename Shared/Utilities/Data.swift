@@ -11,15 +11,17 @@ struct Data {
     let id: Int
     let title: String
     let description: String?
+    var isActive: Bool
     init(id: Int, title: String, description: String? = nil) {
         self.id = id
         self.title = title
         self.description = description
+        self.isActive = false
     }
 }
 
 struct DataManager {
-    private static let data: [Data] = [
+    private static var data: [Data] = [
         Data(id: 0, title: "How many team members can I invite?"),
         Data(id: 1, title: "What is the maximum file upload size?", description: "No more than 2GB. All files in your account must fit your allotted storage space."),
         Data(id: 2, title: "How do I reset my password?"),

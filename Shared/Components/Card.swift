@@ -22,7 +22,7 @@ struct Card: View {
         }
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 30)
-        .scaledToFit()
+        .frame(height: 500)
         .shadow(radius: 5)
     }
 }
